@@ -1,3 +1,6 @@
+google.com, pub-4939295622109955, DIRECT, f08c47fec0942fa0
+
+
 appads.in, 106246, RESELLER
 odeeo.io, 118848844, RESELLER, 36cfd73091d5c3fc
 unity.com, 100955546, DIRECT, 96cabb5fbdde37a7
