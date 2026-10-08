@@ -64,8 +64,11 @@
       border-radius: 20px;
       background: #334155;
       display: flex; align-items: center; justify-content: center;
-      font-size: 40px;
       flex-shrink: 0;
+      overflow: hidden;
+    }
+    .app-icon img {
+      width: 100%; height: 100%; object-fit: cover;
     }
     .app-info h2 { font-size: 18px; font-weight: 800; margin-bottom: 4px; color: var(--accent); }
     .app-info p { color: var(--text-dim); font-size: 14px; }
@@ -98,7 +101,9 @@
     <div class="app-grid">
       <!-- Tasbeeh Counter -->
       <a href="tasbeeh-counter/index.html" class="app-card">
-        <div class="app-icon">📿</div>
+        <div class="app-icon">
+          <img src="assets/tasbeeh-counter.png" alt="Tasbeeh Counter">
+        </div>
         <div class="app-info">
           <h2>Tasbeeh Counter: Dhikr & Dua</h2>
           <p>A simple, elegant, and feature-rich Tasbeeh counter app.</p>
@@ -107,7 +112,9 @@
 
       <!-- Arrow Puzzle -->
       <a href="arrow-puzzle/index.html" class="app-card">
-        <div class="app-icon">🏹</div>
+        <div class="app-icon">
+          <img src="assets/arrow-puzzle.png" alt="Arrow Puzzle">
+        </div>
         <div class="app-info">
           <h2>Arrow Puzzle: Tap Maze Escape</h2>
           <p>A relaxing yet challenging arrow puzzle game with hundreds of levels.</p>
@@ -116,7 +123,9 @@
 
       <!-- Stasis Gallery -->
       <a href="stasis-gallery/index.html" class="app-card">
-        <div class="app-icon">🖼️</div>
+        <div class="app-icon">
+          <img src="assets/stasis-gallery.png" alt="Stasis Gallery">
+        </div>
         <div class="app-info">
           <h2>Stasis Gallery</h2>
           <p>A beautiful and minimal photo gallery application.</p>
