@@ -1,6 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<!DOCTYPE html>
+<html lang="en">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="144x144" href="/favicon-144x144.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#0d1117">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHB.dev — Mobile App & Game Developer</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #131c2e;
+            --border-color: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0ea5e9;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 1rem 2rem 1rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 3rem;
+        }
+        header h1 {
+            font-size: 2.75rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+        .section-title {
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: var(--text-main);
+        }
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .app-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .app-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent);
+        }
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 16px;
+            object-fit: cover;
+            margin-bottom: 1.25rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        .app-card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+        .app-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+        .store-btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #0b0f19;
+            padding: 0.65rem 1.25rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        .store-btn:hover {
+            background-color: var(--accent-hover);
+        }
+        footer {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        footer .links {
+            margin-top: 0.75rem;
+        }
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>AHB.dev</h1>
+            <p>Independent Mobile Application & Game Developer</p>
+        </header>
+
+        <h2 class="section-title">Featured Apps & Games</h2>
+        
+        <div class="apps-grid">
+            <!-- App 1: Tasbeeh Counter -->
+            <div class="app-card">
+                <img src="./assets/tasbeeh-counter.png" alt="Tasbeeh Counter Icon" class="app-icon">
+                <h3>Tasbeeh Counter & Dhikr</h3>
+                <p>A clean, modern utility app for daily dhikr, tasbeeh counts, and spiritual reflections.</p>
+                <a href="https://play.google.com/store/apps/details?id=ahb.dev.tasbeehcounter.tasbeeh_counter_dhikr_dua" target="_blank" class="store-btn">Google Play</a>
+            </div>
+
+            <!-- App 2: Stasis Gallery -->
+            <div class="app-card">
+                <img src="./assets/stasis-gallery.png" alt="Stasis Gallery Icon" class="app-icon">
+                <h3>Stasis Gallery</h3>
+                <p>A high-performance local media gallery built with custom permission handling and fast scanning.</p>
+                <a href="https://play.google.com/store/apps/details?id=ahb.dev.stasisgallery.stasis_gallery" target="_blank" class="store-btn">Google Play</a>
+            </div>
+
+            <!-- App 3: Arrow Puzzle -->
+            <div class="app-card">
+                <img src="./assets/arrow-puzzle.png" alt="Arrow Puzzle Icon" class="app-icon">
+                <h3>Arrow Puzzle: Tap Maze Escape</h3>
+                <p>An engaging indie maze escape puzzle game featuring custom vector artwork and dynamic mechanics.</p>
+                <a href="https://play.google.com/store/apps/details?id=ahb.dev.arrow_puzzle" target="_blank" class="store-btn">Google Play</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 AHB.dev. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stasis Gallery — AHB.Dev</title>
