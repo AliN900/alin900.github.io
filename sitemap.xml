@@ -16,4 +16,16 @@
     <loc>https://ahbdev.dev/arrow-puzzle/terms.html</loc>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://ahbdev.dev/arrow-puzzle/delete-account.html</loc>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://ahbdev.dev/tasbeeh-counter/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ahbdev.dev/stasis-gallery/</loc>
+    <priority>0.7</priority>
+  </url>
 </urlset>
