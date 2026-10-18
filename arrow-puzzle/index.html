@@ -1,146 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arrow Puzzle: Tap Maze Escape — AHB.Dev</title>
-  <meta name="description" content="A relaxing yet challenging arrow puzzle game with hundreds of levels, multiple modes, and infinite procedural puzzles.">
-
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="144x144" href="/favicon-144x144.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <meta name="theme-color" content="#0d1117">
-
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card: #1e293b;
-      --accent: #6C4CF1;
-      --text: #f8fafc;
-      --text-dim: #94a3b8;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-    }
-    .container { max-width: 720px; width: 100%; }
-    .hero { text-align: center; margin-bottom: 40px; }
-    .icon {
-      width: 120px; height: 120px;
-      border-radius: 28px;
-      background: linear-gradient(135deg, #6C4CF1, #00BCD4);
-      display: flex; align-items: center; justify-content: center;
-      margin: 0 auto 20px;
-      box-shadow: 0 12px 40px rgba(108, 76, 241, 0.4);
-      overflow: hidden;
-    }
-    .icon img { width: 100%; height: 100%; object-fit: cover; }
-    h1 { font-size: 32px; font-weight: 900; margin-bottom: 8px; letter-spacing: -0.5px; }
-    .tagline { color: var(--text-dim); font-size: 16px; }
-    .features {
-      background: var(--card);
-      border-radius: 20px;
-      padding: 24px;
-      margin-bottom: 24px;
-    }
-    .features h2 { font-size: 18px; font-weight: 800; margin-bottom: 16px; color: var(--accent); }
-    .features ul { list-style: none; }
-    .features li {
-      padding: 8px 0;
-      color: var(--text-dim);
-      font-size: 14px;
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-    }
-    .features li::before {
-      content: "✦";
-      color: var(--accent);
-      font-weight: bold;
-      flex-shrink: 0;
-    }
-    .cta {
-      display: inline-block;
-      background: var(--accent);
-      color: white;
-      padding: 14px 28px;
-      border-radius: 14px;
-      text-decoration: none;
-      font-weight: 800;
-      font-size: 15px;
-      transition: transform 0.2s;
-    }
-    .cta:hover { transform: translateY(-2px); }
-    .links {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      flex-wrap: wrap;
-      margin-top: 24px;
-      font-size: 13px;
-    }
-    .links a { color: var(--text-dim); text-decoration: none; }
-    .links a:hover { color: var(--accent); }
-    footer { margin-top: 40px; text-align: center; color: var(--text-dim); font-size: 12px; }
-    .cta-wrap { text-align: center; margin: 32px 0; }
-    .note { text-align: center; color: var(--text-dim); font-size: 12px; margin-top: 8px; }
-    .back-link { display: inline-block; margin-bottom: 20px; color: var(--text-dim); text-decoration: none; font-size: 13px; }
-    .back-link:hover { color: var(--accent); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Puzzle: Tap Maze Escape | AHBdev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
-<body>
-  <div class="container">
-    <a href="/" class="back-link">← AHB.dev</a>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between antialiased">
 
-    <div class="hero">
-      <div class="icon">
-        <img src="../assets/arrow-puzzle.png" alt="Arrow Puzzle Icon">
-      </div>
-      <h1>Arrow Puzzle</h1>
-      <p class="tagline">Tap Maze Escape</p>
-    </div>
+    <!-- Header Navigation -->
+    <header class="w-full border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2 font-bold text-lg text-white hover:opacity-90 transition-opacity">
+                <span class="text-amber-400 font-mono">&lt;AHBdev&gt;</span>
+                <span class="text-slate-400">/</span>
+                <span>Arrow Puzzle</span>
+            </a>
+            <nav class="flex items-center gap-6 text-sm text-slate-300">
+                <a href="#how-to-play" class="hover:text-amber-400 transition-colors">How to Play</a>
+                <a href="#modes" class="hover:text-amber-400 transition-colors">Modes</a>
+                <a href="/privacy.html" class="hover:text-amber-400 transition-colors">Privacy Policy</a>
+                <a href="mailto:alialzwghaibi6@gmail.com" class="hover:text-amber-400 transition-colors">Support</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="features">
-      <h2>About the game</h2>
-      <ul>
-        <li>500+ handcrafted levels with escalating complexity</li>
-        <li>Multiple game modes: Classic, Zen, Time Attack, Blitz, Endless Rush</li>
-        <li>Infinite procedurally-generated puzzles</li>
-        <li>20+ arrow skins and board themes to unlock</li>
-        <li>Trophy system with prestige rewards</li>
-        <li>Available in 7 languages</li>
-        <li>Offline-friendly — play anywhere</li>
-      </ul>
-    </div>
+    <!-- Main Content -->
+    <main class="flex-1">
+        <!-- Hero Section -->
+        <section class="max-w-6xl mx-auto px-6 pt-16 pb-20 text-center md:text-left flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/80 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wide uppercase">
+                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                    2D Logic &amp; Maze Escape
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Read the Grid. <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-red-400">Escape the Maze.</span>
+                </h1>
+                <p class="text-lg text-slate-300 leading-relaxed max-w-2xl">
+                    Guide arrows off the board, dodge obstacles, and conquer 500+ handcrafted campaign levels in this ultimate test of logic and foresight.
+                </p>
+                <div class="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-4">
+                    <a href="https://play.google.com/store/apps/details?id=ahb.dev.arrow_puzzle" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-bold transition-all shadow-lg shadow-amber-500/20">
+                        <span class="material-symbols-outlined">sports_esports</span>
+                        <span>Get on Google Play</span>
+                    </a>
+                </div>
+            </div>
 
-    <div class="cta-wrap">
-      <a href="https://play.google.com/store/apps/details?id=ahb.dev.arrow_puzzle" class="cta">
-        Get it on Google Play
-      </a>
-      <p class="note">Available on Android</p>
-    </div>
+            <!-- Puzzle Visual Showcase -->
+            <div class="w-full md:w-5/12 aspect-square rounded-3xl bg-slate-900 border border-slate-800 p-8 flex flex-col justify-between relative overflow-hidden shadow-2xl">
+                <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl"></div>
+                <div class="flex justify-between items-center">
+                    <span class="text-xs font-mono text-amber-400 border border-amber-500/30 px-2.5 py-1 rounded-md">500+ Campaign Summit</span>
+                    <span class="text-xs text-slate-400">Offline Friendly</span>
+                </div>
+                <div class="grid grid-cols-4 gap-3 p-4 bg-slate-950 rounded-2xl border border-slate-800/80 my-auto">
+                    <div class="aspect-square bg-slate-800/80 rounded-lg flex items-center justify-center text-amber-400 font-bold">&uarr;</div>
+                    <div class="aspect-square bg-slate-800/80 rounded-lg flex items-center justify-center text-slate-600">&bull;</div>
+                    <div class="aspect-square bg-slate-800/80 rounded-lg flex items-center justify-center text-orange-400 font-bold">&rarr;</div>
+                    <div class="aspect-square bg-slate-800/80 rounded-lg flex items-center justify-center text-slate-600">&bull;</div>
+                    <div class="aspect-square bg-slate-800/80 rounded-lg flex items-center justify-center text-slate-600">&bull;</div>
+                    <div class="aspect-square bg-amber-500/20 border border-amber-500/40 rounded-lg flex items-center justify-center text-amber-300 font-bold">&rarr;</div>
+                    <div class="aspect-square bg-slate-800/80 rounded-lg flex items-center justify-center text-slate-600">&bull;</div>
+                    <div class="aspect-square bg-slate-800/80 rounded-lg flex items-center justify-center text-amber-400 font-bold">&darr;</div>
+                </div>
+                <div class="flex justify-between text-xs text-slate-400">
+                    <span>Turns &amp; Turn Dots</span>
+                    <span>Tactical Bombs</span>
+                </div>
+            </div>
+        </section>
 
-    <div class="links">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms &amp; Conditions</a>
-      <a href="delete-account.html">Delete Account</a>
-      <a href="mailto:support@ahbdev.dev">Contact</a>
-    </div>
+        <!-- How To Play & Mechanics -->
+        <section id="how-to-play" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/60">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-10 text-center">How to Play</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">1</div>
+                    <h3 class="text-lg font-semibold text-white">Tap to Launch</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Tap any arrow to launch it off the board. Arrows slide in the direction they point—up, down, left, or right.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">2</div>
+                    <h3 class="text-lg font-semibold text-white">Turn Dots &amp; Rerouting</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Turn Dots redirect arrows mid-slide, opening new paths and creating surprising puzzle solutions.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-3">
+                    <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">3</div>
+                    <h3 class="text-lg font-semibold text-white">Clear Obstacles</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Rocks block arrows and require tactical bombs to clear. Sequence your taps carefully to clear every board.</p>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-      © 2026 AHB.Dev · Ali Hussein
+        <!-- Game Modes Section -->
+        <section id="modes" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/60">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-4 text-center">4 Game Modes + Endless Rush</h2>
+            <p class="text-slate-400 text-center mb-12 max-w-xl mx-auto">From quick casual commutes to intense speed runs, choose your way to play.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-2">
+                    <span class="text-xs font-mono text-amber-400 uppercase tracking-widest">Main Campaign</span>
+                    <h3 class="text-xl font-bold text-white">Classic</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Over 500 handcrafted levels with steady progression and scaling difficulty.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-2">
+                    <span class="text-xs font-mono text-amber-400 uppercase tracking-widest">Pure Relaxation</span>
+                    <h3 class="text-xl font-bold text-white">Zen</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">No lives, no timers—just pure, calm puzzle solving at your own pace.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-2">
+                    <span class="text-xs font-mono text-amber-400 uppercase tracking-widest">Speed Run</span>
+                    <h3 class="text-xl font-bold text-white">Time Attack</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Race against the clock and earn bonus seconds for every arrow cleared.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-2">
+                    <span class="text-xs font-mono text-amber-400 uppercase tracking-widest">High Stakes</span>
+                    <h3 class="text-xl font-bold text-white">Blitz &amp; Rush</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">A gauntlet of tightening timers or fast arrow spawns in Endless Rush.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages & Customization -->
+        <section class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/60 text-center">
+            <h2 class="text-2xl font-bold text-white mb-6">Skins, Themes &amp; Global Localization</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto mb-8">
+                Customize your arrow skins and board themes. Fully localized in English, Spanish, Portuguese, Indonesian, Hindi, Arabic, and French.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-slate-800 bg-slate-950 py-8">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <div>&copy; 2026 AHBdev. All rights reserved. Arrow Puzzle.</div>
+            <div class="flex items-center gap-6">
+                <a href="/" class="hover:text-slate-300 transition-colors">AHBdev Home</a>
+                <a href="/privacy.html" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                <a href="/app-ads.txt" class="hover:text-slate-300 transition-colors">app-ads.txt</a>
+                <a href="mailto:alialzwghaibi6@gmail.com" class="hover:text-slate-300 transition-colors">Contact Support</a>
+            </div>
+        </div>
     </footer>
-  </div>
+
 </body>
 </html>
