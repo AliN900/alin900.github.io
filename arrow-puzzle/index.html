@@ -14,7 +14,7 @@
     <!-- Header Navigation -->
     <header class="w-full border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-md sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="index.html" class="flex items-center gap-2 font-bold text-lg text-white hover:opacity-90 transition-opacity">
+            <a href="/" class="flex items-center gap-2 font-bold text-lg text-white hover:opacity-90 transition-opacity">
                 <span class="text-amber-400 font-mono">AHBdev</span>
                 <span class="text-slate-400">/</span>
                 <span>Arrow Puzzle</span>
@@ -22,6 +22,7 @@
             <nav class="flex items-center gap-6 text-sm text-slate-300">
                 <a href="#how-to-play" class="hover:text-amber-400 transition-colors">How to Play</a>
                 <a href="#modes" class="hover:text-amber-400 transition-colors">Modes</a>
+                <a href="#cloud-save" class="hover:text-amber-400 transition-colors">Cloud Sync</a>
                 <a href="privacy.html" class="hover:text-amber-400 transition-colors">Privacy Policy</a>
                 <a href="mailto:alialzwghaibi6@gmail.com" class="hover:text-amber-400 transition-colors">Support</a>
             </nav>
@@ -35,13 +36,13 @@
             <div class="flex-1 space-y-6">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/80 border border-amber-500/30 text-amber-400 text-xs font-semibold tracking-wide uppercase">
                     <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-                    2D Logic &amp; Maze Escape
+                    2D Logic &bull; Cloud Save Sync
                 </div>
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
                     Read the Grid. <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-400 to-red-400">Escape the Maze.</span>
                 </h1>
                 <p class="text-lg text-slate-300 leading-relaxed max-w-2xl">
-                    Guide arrows off the board, dodge obstacles, and conquer 500+ handcrafted campaign levels in this ultimate test of logic and foresight.
+                    Guide arrows off the board, dodge obstacles, and conquer campaign challenges. Your campaign progress, high scores, and unlocked skins are safely synced across all your devices via cloud saving.
                 </p>
                 <div class="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-4">
                     <a href="https://play.google.com/store/apps/details?id=ahb.dev.arrow_puzzle" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-6 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 font-bold transition-all shadow-lg shadow-amber-500/20">
@@ -55,8 +56,11 @@
             <div class="w-full md:w-5/12 aspect-square rounded-3xl bg-slate-900 border border-slate-800 p-8 flex flex-col justify-between relative overflow-hidden shadow-2xl">
                 <div class="absolute -right-10 -bottom-10 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl"></div>
                 <div class="flex justify-between items-center">
-                    <span class="text-xs font-mono text-amber-400 border border-amber-500/30 px-2.5 py-1 rounded-md">500+ Campaign Summit</span>
-                    <span class="text-xs text-slate-400">Offline Friendly</span>
+                    <span class="text-xs font-mono text-amber-400 border border-amber-500/30 px-2.5 py-1 rounded-md">Scaling Campaign Summit</span>
+                    <span class="text-xs text-amber-300 font-medium flex items-center gap-1">
+                        <span class="material-symbols-outlined text-sm">cloud_done</span>
+                        Cloud Sync Enabled
+                    </span>
                 </div>
                 <div class="grid grid-cols-4 gap-3 p-4 bg-slate-950 rounded-2xl border border-slate-800/80 my-auto">
                     <div class="aspect-square bg-slate-800/80 rounded-lg flex items-center justify-center text-amber-400 font-bold">&uarr;</div>
@@ -71,6 +75,29 @@
                 <div class="flex justify-between text-xs text-slate-400">
                     <span>Turns &amp; Turn Dots</span>
                     <span>Tactical Bombs</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cloud Save Feature Section -->
+        <section id="cloud-save" class="max-w-6xl mx-auto px-6 py-16 border-t border-slate-800/60">
+            <div class="p-8 md:p-10 rounded-3xl bg-slate-900/90 border border-amber-500/20 flex flex-col md:flex-row items-center gap-8 justify-between">
+                <div class="space-y-3 flex-1 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 text-amber-400 font-mono text-xs uppercase tracking-wider">
+                        <span class="material-symbols-outlined text-lg">cloud_sync</span>
+                        Progress Security
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-white">Seamless Cloud Progress Backup</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed max-w-xl">
+                        Switch phones or reinstall without fear. Your completed campaign levels, unlocked arrow skins, high scores, and custom settings automatically sync to the cloud.
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 bg-slate-950 px-6 py-4 rounded-2xl border border-slate-800 text-amber-400">
+                    <span class="material-symbols-outlined text-4xl">devices</span>
+                    <div class="text-left text-xs">
+                        <div class="font-bold text-slate-200">Cross-Device Ready</div>
+                        <div class="text-slate-400">Automatic background sync</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -106,7 +133,7 @@
                 <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-2">
                     <span class="text-xs font-mono text-amber-400 uppercase tracking-widest">Main Campaign</span>
                     <h3 class="text-xl font-bold text-white">Classic</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed">Over 500 handcrafted levels with steady progression and scaling difficulty.</p>
+                    <p class="text-sm text-slate-400 leading-relaxed">Scaling campaign progression with strategic board configurations.</p>
                 </div>
                 <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 space-y-2">
                     <span class="text-xs font-mono text-amber-400 uppercase tracking-widest">Pure Relaxation</span>
@@ -140,9 +167,9 @@
         <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
             <div>&copy; 2026 AHBdev. All rights reserved. Arrow Puzzle.</div>
             <div class="flex items-center gap-6">
-                <a href="index.html" class="hover:text-slate-300 transition-colors">AHBdev Home</a>
+                <a href="/" class="hover:text-slate-300 transition-colors">AHBdev Home</a>
                 <a href="privacy.html" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
-                <a href="app-ads.txt" class="hover:text-slate-300 transition-colors">app-ads.txt</a>
+                <a href="/app-ads.txt" class="hover:text-slate-300 transition-colors">app-ads.txt</a>
                 <a href="mailto:alialzwghaibi6@gmail.com" class="hover:text-slate-300 transition-colors">Contact Support</a>
             </div>
         </div>
