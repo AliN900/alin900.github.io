@@ -52,7 +52,7 @@
   <p class="meta">
     <strong>Arrow Puzzle: Tap Maze Escape</strong><br>
     Effective date: 14 October 2026<br>
-    Last updated: 14 October 2026
+    Last updated: 28 October 2026
   </p>
 
   <p>
@@ -60,7 +60,7 @@
     information when you use <strong>Arrow Puzzle: Tap Maze Escape</strong>
     ("the Game"). We keep data collection to the absolute minimum needed to
     run the Game. Nothing is sold, nothing is shared with advertisers beyond
-    what's required to serve ads.
+    what's required to serve ads and perform ad mediation.
   </p>
 
   <h2>1. What We Collect</h2>
@@ -104,19 +104,21 @@
   <p>Only display name, scores, level, stars, and trophies are ever
   visible to other players. No email, no device info, no game history.</p>
 
-  <h3>1.4 Ad serving</h3>
-  <p>The Game shows interstitial, banner, and rewarded video ads through
-  <strong>Unity Ads</strong>. Unity may collect:</p>
+  <h3>1.4 Advertising & Mediation</h3>
+  <p>The Game serves banner, interstitial, and rewarded video ads through
+  <strong>Google AdMob</strong> and <strong>Unity Ads</strong> using Google AdMob Mediation. These ad platforms and their integrated mediation partners collect data to serve ads, limit frequency, combat fraud, and measure performance.</p>
+  <p>Collected ad-related data may include:</p>
   <ul>
-    <li>Google Advertising ID (GAID)</li>
-    <li>IP address (for regional ad selection)</li>
-    <li>Device model and OS version</li>
-    <li>Interaction events (ad watched, ad skipped, ad clicked)</li>
+    <li>Google Advertising ID (GAID) or Apple IDFA</li>
+    <li>IP address (used to infer general location/country for ad targeting)</li>
+    <li>Device information (model, manufacturer, OS version, language)</li>
+    <li>Ad interaction data (view duration, clicks, completion events)</li>
   </ul>
-  <p>See <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity's Privacy Policy</a>
-  for details. You can reset your Advertising ID or opt out of
-  personalized ads in your device settings (Android: Settings → Privacy →
-  Ads).</p>
+  <p>You can manage personalized ad preferences or reset your Advertising ID via your device settings (Android: <code>Settings → Privacy → Ads</code>). For details on how our advertising partners process data, review:</p>
+  <ul>
+    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy & Terms (AdMob)</a></li>
+    <li><a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a></li>
+  </ul>
 
   <h3>1.5 Huawei In-App Purchases (AppGallery only)</h3>
   <p>If you install from Huawei AppGallery and make a purchase, Huawei
@@ -125,11 +127,11 @@
 
   <h2>2. What We Do NOT Collect</h2>
   <ul>
-    <li>No location data</li>
+    <li>No precise GPS location data</li>
     <li>No contacts, photos, or files</li>
     <li>No microphone or camera access</li>
     <li>No phone number</li>
-    <li>No analytics SDKs (no Firebase Analytics, no Mixpanel, etc.)</li>
+    <li>No standalone analytics SDKs (no Firebase Analytics, no Mixpanel, etc.)</li>
     <li>No crash reporting services</li>
   </ul>
 
@@ -137,7 +139,9 @@
   <ul>
     <li><strong>Appwrite</strong> — cloud save storage
     (<a href="https://appwrite.io/privacy" target="_blank" rel="noopener">privacy</a>)</li>
-    <li><strong>Unity Ads</strong> — advertising
+    <li><strong>Google AdMob</strong> — primary ad network & mediation platform
+    (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy</a>)</li>
+    <li><strong>Unity Ads</strong> — mediated ad network partner
     (<a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">privacy</a>)</li>
     <li><strong>Google Sign-In</strong> — optional authentication
     (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy</a>)</li>
@@ -171,7 +175,7 @@
     <li>Local device data — persists until you uninstall the Game</li>
     <li>Cloud data — persists until you delete your account</li>
     <li>Leaderboard data — same as cloud, deleted with account</li>
-    <li>Ad interaction data — retained by Unity per their policy</li>
+    <li>Ad interaction data — retained by Google AdMob and Unity Ads according to their respective privacy policies</li>
   </ul>
 
   <h2>7. Security</h2>
