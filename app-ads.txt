@@ -169,3 +169,4 @@ smaato.com, 1100047589, RESELLER, 07bcf65f187117b4
 dauup.com, 34222, RESELLER, 4daba13e2b0dfd9
 monetrix.ai, 10761, RESELLER
 start.io, 131192070, RESELLER
+playdigo.com, 1965, RESELLER
